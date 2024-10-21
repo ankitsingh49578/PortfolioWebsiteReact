@@ -34,7 +34,7 @@ function Contact() {
       .then((res) => {
         console.log("Email sent successfully", res);
         toast.success("Successfully sent!", {
-          position: "bottom-right",
+          position: "bottom-left",
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,
