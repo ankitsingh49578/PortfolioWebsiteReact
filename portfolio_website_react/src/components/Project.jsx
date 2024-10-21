@@ -30,7 +30,7 @@ function Project() {
             ></ProjectCard>
           </div>
 
-          <div className="flex flex-row justify-evenly" data-aos="fade-left">
+          <div data-aos="fade-right" className="flex flex-row justify-evenly">
             <ProjectCard
               logo={
                 <SportsEsportsIcon
@@ -60,7 +60,7 @@ function Project() {
             ></ProjectCard>
           </div>
 
-          <div className="flex flex-row justify-evenly" data-aos="fade-left">
+          <div className="flex flex-row justify-evenly" data-aos="fade-right">
             <ProjectCard
               logo={
                 <FormatListBulletedIcon
