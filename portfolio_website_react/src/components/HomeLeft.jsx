@@ -2,7 +2,6 @@ import React from "react";
 import CvButton from "./CvButton";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import {
   faFacebook,
   faGithub,
@@ -18,7 +17,7 @@ function HomeLeft() {
     deleteSpeed: 80,
   });
   return (
-    <div className="translate-y-[130px] flex flex-col md:text-left items-center md:items-start text-center">
+    <div className="translate-y-[70px] md:translate-y-[130px] flex flex-col md:text-left items-center md:items-start text-center">
       <div className="text-4xl md:text-5xl text-white font-bold">
         <h1 className="mb-6">Hi, I'm Ankit Singh</h1>
         <h1 className="">
