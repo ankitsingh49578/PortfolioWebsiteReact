@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import {ToastContainer, toast} from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Contact() {
   const [username, setusername] = useState("");
@@ -23,7 +23,7 @@ function Contact() {
     const templateParams = {
       from_name: username,
       phone_no: phone_no,
-      to_name: 'Ankit Singh',
+      to_name: "Ankit Singh",
       subject: subject,
       message: message,
     };
@@ -33,8 +33,8 @@ function Contact() {
       .send(serviceId, templateId, templateParams, publicKey)
       .then((res) => {
         console.log("Email sent successfully", res);
-        toast.success('Successfully sent!', {
-          position: "top-right",
+        toast.success("Successfully sent!", {
+          position: "bottom-right",
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,
@@ -43,7 +43,7 @@ function Contact() {
           progress: undefined,
           theme: "dark",
           // transition: Bounce,
-          });
+        });
         setusername("");
         setphone_no("");
         setuseremail("");
@@ -52,7 +52,7 @@ function Contact() {
       })
       .catch((error) => {
         console.error("An error sending email: ", error);
-        toast.error('An error occured!', {
+        toast.error("An error occured!", {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
@@ -62,7 +62,7 @@ function Contact() {
           progress: undefined,
           theme: "dark",
           // transition: Bounce,
-          });
+        });
       });
   };
 
