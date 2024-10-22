@@ -20,7 +20,7 @@ function App() {
       <div className="md:p-[16px] bg-gradient-to-r from-green-400 via-[#03c0c6] to-purple-500 -webkit-background-clip: border-box border-transparent min-h-screen min-w-screen">
         <div className="bg-[#212428] w-full h-full">
           <Navbar></Navbar>
-          <div className="ml-5 mr-5 md:ml-24 md:mr-24">
+          <div className="ml-0 mr-0 md:ml-20 md:mr-20 overflow-x-hidden md:overflow-x-visible">
             <Home></Home>
             <Line></Line>
             <Project></Project>

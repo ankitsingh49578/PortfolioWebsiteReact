@@ -8,9 +8,9 @@ function HomeRight() {
         src="./ankitSingh.jpg"
         loading="lazy"
         alt="dp.jpg"
-        height="350px"
-        width="350px"
-        className="border-purple-800 rounded-2xl"
+        // height="350px"
+        // width="350px"
+        className="border-purple-800 rounded-2xl h-[280px] w-[280px] md:h-[350px] md:w-[350px]"
       />
       </div>
     </div>

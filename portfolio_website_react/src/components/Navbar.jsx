@@ -33,7 +33,7 @@ function Navbar() {
           </span>
         </div>
 
-        <div className={`bg-[#212428] md:w-fit w-full md:pl-0 pl-9 -mb-24 -mt-2 md:mt-0 pt-5 md:pt-0 left-0 z-100 md:z-auto transition-all ease-in duration-500 ${isOpen ? 'hidden md:block' : 'block h-[310px] md:h-0'}`}>
+        <div className={`bg-[#212428] md:w-fit w-full md:pl-0 pl-9 -mb-24 -mt-2 md:mt-0 pt-5 md:pt-0 left-0 transition-all ease-in duration-500 ${isOpen ? 'hidden md:block' : 'block h-[310px] md:h-0'}`}>
           <ul className="text-[#a0a8b3] flex flex-col justify-self-center md:flex-row gap-6 lg:gap-10 md:pr-8 lg:pr-16 text-[22px]">
               <div className='flex flex-col group hover:cursor-pointer transition-all'>
                 <li className="group-hover:text-[#03c0c6] font-serif"><HomeOutlinedIcon className='-translate-y-[1px] -mr-[5px]'></HomeOutlinedIcon> <a href="#home">Home</a> </li>

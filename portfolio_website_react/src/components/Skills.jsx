@@ -2,7 +2,7 @@ import React from 'react'
 
 function Skills() {
   return (
-    <div data-aos="fade-right" id='skills' className='min-h-[575px]'>
+    <div data-aos="fade-right" id='skills' className='min-h-[575px] ml-4 mr-4 md:ml-0 md:mr-0'>
         <h1 className='text-6xl text-[#a0a8b3] font-semibold mb-16'>Skills</h1>
         <div className='md:grid md:grid-cols-2 gap-3'>
             <div>

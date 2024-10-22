@@ -67,7 +67,7 @@ function Contact() {
   };
 
   return (
-    <div data-aos="fade-right" id="contact" className="min-h-[850px]">
+    <div data-aos="fade-right" id="contact" className="min-h-[850px] px-2">
       <h1 className="text-[#a0a8b3] text-6xl font-semibold mb-12">
         Contact Me
       </h1>
