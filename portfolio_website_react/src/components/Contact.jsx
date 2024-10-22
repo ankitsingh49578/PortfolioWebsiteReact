@@ -53,7 +53,7 @@ function Contact() {
       .catch((error) => {
         console.error("An error sending email: ", error);
         toast.error("An error occured!", {
-          position: "top-right",
+          position: "bottom-left",
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,
