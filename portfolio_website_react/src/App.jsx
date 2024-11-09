@@ -1,5 +1,6 @@
 import Navbar from "./components/header/Navbar"
 import Home from "./components/home/Home"
+import Education from "./components/education/Education"
 import Line from "./components/Line"
 import Project from "./components/projects/Project"
 import Skills from "./components/skills/Skills"
@@ -22,6 +23,8 @@ function App() {
           <Navbar></Navbar>
           <div className="ml-0 mr-0 md:ml-20 md:mr-20 overflow-x-hidden md:overflow-x-visible">
             <Home></Home>
+            <Line></Line>
+            <Education></Education>
             <Line></Line>
             <Project></Project>
             <Line></Line>

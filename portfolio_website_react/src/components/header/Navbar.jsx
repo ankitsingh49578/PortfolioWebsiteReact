@@ -1,5 +1,6 @@
 // import React from 'react'
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import NotesOutlinedIcon from '@mui/icons-material/NotesOutlined';
 import PsychologyOutlinedIcon from '@mui/icons-material/PsychologyOutlined';
 import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
@@ -33,23 +34,27 @@ function Navbar() {
           </span>
         </div>
 
-        <div className={`bg-[#212428] md:w-fit w-full md:pl-0 pl-9 -mb-24 -mt-2 md:mt-0 pt-5 md:pt-0 left-0 transition-all ease-in duration-500 ${isOpen ? 'hidden md:block' : 'block h-[310px] md:h-0'}`}>
-          <ul className="text-[#a0a8b3] flex flex-col justify-self-center md:flex-row gap-6 lg:gap-10 md:pr-8 lg:pr-16 text-[22px]">
+        <div className={`bg-[#212428] md:w-fit w-full md:pl-0 pl-9 -mb-10 -mt-2 md:mt-0 pt-5 md:pt-0 left-0 transition-all ease-in duration-500 ${isOpen ? 'hidden md:block' : 'block h-[310px] md:h-0'}`}>
+          <ul className="text-[#a0a8b3] flex flex-col justify-self-center md:flex-row gap-5 lg:gap-7 md:pr-8 lg:pr-16 text-[20px]">
               <div className='flex flex-col group hover:cursor-pointer transition-all'>
-                <li className="group-hover:text-[#03c0c6] font-serif"><HomeOutlinedIcon className='-translate-y-[1px] -mr-[5px]'></HomeOutlinedIcon> <a href="#home">Home</a> </li>
-                <div className='h-[2px] w-[81px] ml-1 group-hover:bg-[#03c0c6]'></div>
+                <a href="#home"><li className="group-hover:text-[#03c0c6] font-serif"><HomeOutlinedIcon className='-translate-y-[1px] -mr-[5px]'></HomeOutlinedIcon> Home</li> </a>
+                <div className='h-[2px] w-[75px] ml-1 group-hover:bg-[#03c0c6]'></div>
               </div>
               <div className='flex flex-col group hover:cursor-pointer transition-all'>
-                <li className="group-hover:text-[#03c0c6] font-serif"><NotesOutlinedIcon className='-translate-y-[1px] mr-[2px]'></NotesOutlinedIcon><a href="#projects">Projects</a></li>
-                <div className='h-[2px] w-[101px] ml-1 group-hover:bg-[#03c0c6]'></div>
+                <a href="#about"><li className="group-hover:text-[#03c0c6] font-serif"><InfoOutlinedIcon className='-translate-y-[1px] -mr-[4px]'></InfoOutlinedIcon> About</li> </a>
+                <div className='h-[2px] w-[75px] ml-1 group-hover:bg-[#03c0c6]'></div>
+              </div>
+              <div className='flex flex-col group hover:cursor-pointer transition-all'>
+                <a href="#projects"><li className="group-hover:text-[#03c0c6] font-serif"><NotesOutlinedIcon className='-translate-y-[1px] mr-[2px]'></NotesOutlinedIcon>Projects</li> </a>
+                <div className='h-[2px] w-[95px] ml-1 group-hover:bg-[#03c0c6]'></div>
               </div>
               <div className='flex flex-col group hover:cursor-pointer transition-all'>  
-                <li className="group-hover:text-[#03c0c6] font-serif"><PsychologyOutlinedIcon className='-translate-y-[1px] mr-[2px]'></PsychologyOutlinedIcon><a href="#skills">Skills</a></li>
-                <div className='h-[2px] w-[77px] ml-1 group-hover:bg-[#03c0c6]'></div>
+                <a href="#skills"><li className="group-hover:text-[#03c0c6] font-serif"><PsychologyOutlinedIcon className='-translate-y-[1px] mr-[2px]'></PsychologyOutlinedIcon>Skills</li> </a>
+                <div className='h-[2px] w-[71px] ml-1 group-hover:bg-[#03c0c6]'></div>
               </div>
               <div className='flex flex-col group hover:cursor-pointer transition-all'>
-                <li className="group-hover:text-[#03c0c6] font-serif"><ChatBubbleOutlineOutlinedIcon className='-translate-y-[1px] mr-[2px]'></ChatBubbleOutlineOutlinedIcon><a href="#contact">Contact</a></li>
-                <div className='h-[2px] w-[102px] group-hover:bg-[#03c0c6]'></div>
+                <a href="#contact"><li className="group-hover:text-[#03c0c6] font-serif"><ChatBubbleOutlineOutlinedIcon className='-translate-y-[1px] mr-[2px]'></ChatBubbleOutlineOutlinedIcon>Contact</li> </a>
+                <div className='h-[2px] w-[95px] group-hover:bg-[#03c0c6]'></div>
               </div>
           </ul>
         </div>

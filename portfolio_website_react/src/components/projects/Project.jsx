@@ -13,9 +13,9 @@ function Project() {
       className="text-[#a0a8b3] min-h-[800px] mb-20 ml-4 mr-4 md:ml-0 md:mr-0"
     >
       <div>
-        <h1 data-aos="fade-right" className="text-6xl font-semibold mb-10">Projects</h1>
+        <h1 data-aos="fade-up" className="text-center text-6xl font-semibold mb-10">Projects</h1>
         <div className="grid grid-cols-1 gap-16">
-          <div data-aos="fade-right">
+          <div data-aos="fade-up">
             <ProjectCard
               logo={
                 <PasswordIcon
@@ -30,7 +30,7 @@ function Project() {
             ></ProjectCard>
           </div>
 
-          <div data-aos="fade-right" className="flex flex-row justify-evenly">
+          <div data-aos="fade-up" className="flex flex-row justify-evenly">
             <ProjectCard
               logo={
                 <SportsEsportsIcon
@@ -45,7 +45,7 @@ function Project() {
             ></ProjectCard>
           </div>
 
-          <div data-aos="fade-right">
+          <div data-aos="fade-up">
             <ProjectCard
               logo={
                 <WebIcon
@@ -60,7 +60,7 @@ function Project() {
             ></ProjectCard>
           </div>
 
-          <div className="flex flex-row justify-evenly" data-aos="fade-right">
+          <div className="flex flex-row justify-evenly" data-aos="fade-up">
             <ProjectCard
               logo={
                 <FormatListBulletedIcon

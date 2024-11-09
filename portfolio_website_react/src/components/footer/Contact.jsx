@@ -67,13 +67,13 @@ function Contact() {
   };
 
   return (
-    <div data-aos="fade-right" id="contact" className="min-h-[850px] px-2">
+    <div data-aos="fade-up" id="contact" className="min-h-[800px] px-2 place-items-center">
       <h1 className="text-[#a0a8b3] text-6xl font-semibold mb-12">
         Contact Me
       </h1>
       <form
         onSubmit={handleSubmit}
-        className="max-w-[900px] min-h-[700px] border-2 p-7 rounded-lg border-[white] border-opacity-10 bg-[#252629]"
+        className="w-[90vw] md:max-w-[800px] min-h-[700px] border-2 p-7 rounded-lg border-[white] border-opacity-10 bg-[#252629]"
       >
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div className="flex flex-col gap-3 w-full md:w-1/2">
