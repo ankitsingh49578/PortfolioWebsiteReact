@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import PasswordIcon from "@mui/icons-material/Password";
-import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
+import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
 import WebIcon from "@mui/icons-material/Web";
 import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
 
@@ -33,15 +33,15 @@ function Project() {
           <div data-aos="fade-up" className="flex flex-row justify-evenly">
             <ProjectCard
               logo={
-                <SportsEsportsIcon
+                <RestaurantMenuIcon
                   sx={{ fontSize: "55px" }}
                   className="text-[#03c0c6]"
-                ></SportsEsportsIcon>
+                ></RestaurantMenuIcon>
               }
-              head="Simon Says Game"
-              cont="Designed and developed a memory game to challenge users with increasingly complex sequences of colors and sounds."
-              anc="https://ankitsingh49578.github.io/Simon-Says-Game/index.html"
-              img="./projects/simonSays.png"
+              head="Food Recipe App"
+              cont="A React.js and Tailwind CSS-based app that lets users search dishes and view detailed recipes using TheMealDB API."
+              anc="https://food-recipe-app-black.vercel.app/"
+              img="./projects/foodRecipeApp.png"
             ></ProjectCard>
           </div>
 

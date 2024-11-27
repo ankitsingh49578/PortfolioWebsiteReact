@@ -16,7 +16,7 @@ function Navbar() {
     <div>
       <div data-aos="fade-right" className="flex flex-col md:flex-row text-xl justify-between translate-y-10 md:pl-8 md:pr-6 md:pt-7 left-0 right-0">
         <div className="flex flex-row justify-between pr-7 pl-4 place-items-center">
-          <span className='flex flex-row gap-2 pt-6 pl-4 md:pl-0 md:pt-0 max-h-[70px] md:max-h-[40px] md:h-fit'>
+          <span className='flex flex-row gap-2 pt-6 pl-4 md:pl-0 md:pt-0 max-h-[65px] md:max-h-[40px] md:h-fit'>
             <img
               src="./ankitFevicon.png"
               alt="img"
