@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import PasswordIcon from "@mui/icons-material/Password";
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
 import WebIcon from "@mui/icons-material/Web";
 import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
@@ -15,33 +15,19 @@ function Project() {
       <div>
         <h1 data-aos="fade-up" className="text-center text-6xl font-semibold mb-10">Projects</h1>
         <div className="grid grid-cols-1 gap-16">
+
           <div data-aos="fade-up">
             <ProjectCard
               logo={
-                <PasswordIcon
+                <AddShoppingCartIcon
                   sx={{ fontSize: "55px" }}
                   className="text-[#03c0c6]"
-                ></PasswordIcon>
+                ></AddShoppingCartIcon>
               }
-              head="Random Password Generator"
-              cont="Created a password generator with customizable length, character types, and strength evaluation."
-              anc="https://ankitsingh49578.github.io/Password-Generator/"
-              img="./projects/passwordGenerator.png"
-            ></ProjectCard>
-          </div>
-
-          <div data-aos="fade-up" className="flex flex-row justify-evenly">
-            <ProjectCard
-              logo={
-                <RestaurantMenuIcon
-                  sx={{ fontSize: "55px" }}
-                  className="text-[#03c0c6]"
-                ></RestaurantMenuIcon>
-              }
-              head="Food Recipe App"
-              cont="A React.js and Tailwind CSS-based app that lets users search dishes and view detailed recipes using TheMealDB API."
-              anc="https://food-recipe-app-black.vercel.app/"
-              img="./projects/foodRecipeApp.png"
+              head="E-Commerce Cart"
+              cont="Developed and deployed a responsive e-commerce cart using React.js, Redux Toolkit, React Router DOM, and Tailwind CSS, featuring product listing, cart management, and dynamic pricing."
+              anc="https://e-commerce-cart-rose.vercel.app/"
+              img="./projects/eCommerceCart.png"
             ></ProjectCard>
           </div>
 
@@ -57,6 +43,21 @@ function Project() {
               cont="Developed a clone of the Razorpay website using HTML, CSS, and Tailwind CSS as a framework."
               anc="https://razorpay-clone-virid.vercel.app/"
               img="./projects/razorPay.png"
+            ></ProjectCard>
+          </div>
+          
+          <div data-aos="fade-up" className="flex flex-row justify-evenly">
+            <ProjectCard
+              logo={
+                <RestaurantMenuIcon
+                  sx={{ fontSize: "55px" }}
+                  className="text-[#03c0c6]"
+                ></RestaurantMenuIcon>
+              }
+              head="Food Recipe App"
+              cont="A React.js and Tailwind CSS-based app that lets users search dishes and view detailed recipes using TheMealDB API."
+              anc="https://food-recipe-app-black.vercel.app/"
+              img="./projects/foodRecipeApp.png"
             ></ProjectCard>
           </div>
 
