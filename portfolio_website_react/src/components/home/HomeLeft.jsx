@@ -35,35 +35,34 @@ function HomeLeft() {
         complex problems through competitive programming.
       </h1>
 
-      <div className="translate-y-16">
+      <div className="translate-y-16 flex flex-row gap-8">
         <a
-          href="https://www.facebook.com/profile.php?id=100016151614009"
+          href="https://leetcode.com/u/ankitsingh49578/"
           target="_blank"
         >
-          <FontAwesomeIcon
-            icon={faFacebook}
-            className="text-4xl hover:text-white text-[#03c0c6] mr-5 cursor-pointer hover:scale-110 transition-all"
-          ></FontAwesomeIcon>
+        <img src="../Buttons/leetcodeIcon.png" alt="leetcode.png" 
+          className="hover:bg-white bg-[#03c0c6] rounded-full p-1.5 cursor-pointer hover:scale-110 transition-all h-12 w-12"
+        />
         </a>
         <a href="https://github.com/ankitsingh49578" target="_blank">
           <FontAwesomeIcon
             icon={faGithub}
-            className="text-4xl hover:text-white text-[#03c0c6] mr-5 cursor-pointer hover:scale-110 transition-all"
+            className="text-5xl hover:text-white text-[#03c0c6] cursor-pointer hover:scale-110 transition-all"
           ></FontAwesomeIcon>
         </a>
-        <a href="https://www.instagram.com/mr_singh_ankit/" target="_blank">
+        {/* <a href="https://www.instagram.com/mr_singh_ankit/" target="_blank">
           <FontAwesomeIcon
             icon={faInstagram}
-            className="text-4xl hover:text-white text-[#03c0c6] mr-5 cursor-pointer hover:scale-110 transition-all"
+            className="text-4xl hover:text-white text-[#03c0c6] cursor-pointer hover:scale-110 transition-all"
           ></FontAwesomeIcon>
-        </a>
+        </a> */}
         <a
           href="https://www.linkedin.com/in/ankit-singh-b3660a250/"
           target="_blank"
         >
           <FontAwesomeIcon
             icon={faLinkedin}
-            className="text-4xl hover:text-white text-[#03c0c6] mr-5 cursor-pointer hover:scale-110 transition-all"
+            className="text-5xl hover:text-white text-[#03c0c6] cursor-pointer hover:scale-110 transition-all"
           ></FontAwesomeIcon>
         </a>
       </div>
