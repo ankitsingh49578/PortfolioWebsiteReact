@@ -11,7 +11,7 @@ import {
 
 function HomeLeft() {
   const [text] = useTypewriter({
-    words: ["Frontend Developer", "Competitive Programmer"],
+    words: ["Full Stack Developer", "Competitive Programmer"],
     loop: {},
     typeSpeed: 150,
     deleteSpeed: 80,
