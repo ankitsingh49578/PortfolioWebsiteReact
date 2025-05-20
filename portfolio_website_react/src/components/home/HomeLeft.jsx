@@ -30,7 +30,7 @@ function HomeLeft() {
       </div>
 
       <h1 className="translate-y-8 text-[#a0a8b3] text-[18px] max-w-[470px] leading-7">
-        I’m a Frontend Developer and Competitive Programmer. This portfolio
+        I’m a Full Stack Developer and Competitive Programmer. This portfolio
         highlights my expertise in crafting seamless user interfaces and solving
         complex problems through competitive programming.
       </h1>
