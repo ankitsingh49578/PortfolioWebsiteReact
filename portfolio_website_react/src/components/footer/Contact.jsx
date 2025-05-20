@@ -1,8 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import toast, { Toaster } from 'react-hot-toast';
 
 function Contact() {
   const [username, setusername] = useState("");
@@ -33,17 +32,7 @@ function Contact() {
       .send(serviceId, templateId, templateParams, publicKey)
       .then((res) => {
         console.log("Email sent successfully", res);
-        toast.success("Successfully sent!", {
-          position: "bottom-left",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "dark",
-          // transition: Bounce,
-        });
+        toast.success("Message sent successfully!");
         setusername("");
         setphone_no("");
         setuseremail("");
@@ -52,17 +41,7 @@ function Contact() {
       })
       .catch((error) => {
         console.error("An error sending email: ", error);
-        toast.error("An error occured!", {
-          position: "bottom-left",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "dark",
-          // transition: Bounce,
-        });
+        toast.error("An error occured!");
       });
   };
 
@@ -164,7 +143,6 @@ function Contact() {
         >
           SEND MESSAGE
         </button>
-        <ToastContainer />
       </form>
     </div>
   );
