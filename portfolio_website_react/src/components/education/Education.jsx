@@ -10,7 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 function Education() {
   return (
     <div data-aos="fade-up" id="about" className="pr-2 md:pr-0">
-      <h1 className="text-6xl text-center text-[#a0a8b3] font-semibold mb-10">
+      <h1 className="text-6xl text-center dark:text-[#a0a8b3] font-semibold mb-10">
         Education
       </h1>
       <div className="">
@@ -19,7 +19,7 @@ function Education() {
             return (
               <VerticalTimelineElement
                 key={element.key}
-                date={<span className="text-white">{element.year}</span>}
+                date={<span className="">{element.year}</span>}
                 iconStyle={
                   element.icon === "school"
                     ? { background: "#06d6a0" }

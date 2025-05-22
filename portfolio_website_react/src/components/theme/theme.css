@@ -1,0 +1,90 @@
+:root {
+    --bg: #F5F5F5;
+    --gray: #293246;
+    /* Tailwind gray-900 */
+    --white: #FFFFFF;
+}
+
+.toggle-wrapper {
+    background-color: var(--bg);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 60px;
+    height: 30px;
+    background-color: var(--white);
+    border-radius: 30px;
+    box-shadow: rgba(17, 24, 39, 0.1) 0px 4px 8px;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.btn .ripple {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 3px;
+    border-radius: 50%;
+    transition: transform 0.4s ease;
+}
+
+.ripple--dark {
+    background-color: var(--gray);
+    left: 3px;
+    transform: scale(4.5);
+    z-index: 1;
+}
+
+.ripple--light {
+    background-color: var(--white);
+    right: 3px;
+    transform: scale(1);
+    z-index: 2;
+}
+
+.btn--checked .ripple--dark {
+    z-index: 2;
+    transform: scale(1);
+}
+
+.btn--checked .ripple--light {
+    z-index: 1;
+    transform: scale(4.5);
+}
+
+.toggle {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 3px;
+    border-radius: 50%;
+    z-index: 3;
+    transition: all 0.4s ease;
+}
+
+.toggle--dark {
+    background-color: var(--gray);
+    left: 3px;
+}
+
+.toggle--light {
+    background-color: var(--white);
+    right: 3px;
+}
+
+.btn--checked .toggle--dark {
+    left: auto;
+    right: 3px;
+}
+
+.btn--checked .toggle--light {
+    right: auto;
+    left: 3px;
+}

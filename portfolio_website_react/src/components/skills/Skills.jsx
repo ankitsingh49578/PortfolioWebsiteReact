@@ -81,7 +81,7 @@ function Skills() {
   ]
   return (
     <div data-aos="fade-up" id='skills' className='min-h-[700px] ml-4 mr-4 md:ml-0 md:mr-0'>
-        <h1 className='text-6xl text-center text-[#a0a8b3] font-semibold mb-16'>Skills</h1>
+        <h1 className='text-6xl text-center dark:text-[#a0a8b3] font-semibold mb-16'>Skills</h1>
         <div className='place-items-center flex flex-row flex-wrap md:gap-x-28 gap-x-14 md:gap-y-32 gap-y-14 lg:mx-36 mx-auto justify-center'>
             {
               skills.map((skill)=>{
