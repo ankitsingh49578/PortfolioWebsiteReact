@@ -5,6 +5,7 @@ import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
 import WebIcon from "@mui/icons-material/Web";
 import HomeIcon from '@mui/icons-material/Home';
 import projectContent from "./projectContent";
+import { GiClothes } from "react-icons/gi";
 
 function Project() {
   const logos = {
@@ -12,6 +13,7 @@ function Project() {
     "2": <WebIcon sx={{ fontSize: "55px" }} className="dark:text-[#03c0c6] text-blue-500"></WebIcon>,
     "3": <RestaurantMenuIcon sx={{ fontSize: "55px" }} className="dark:text-[#03c0c6] text-blue-500"></RestaurantMenuIcon>,
     "4": <HomeIcon sx={{ fontSize: "55px" }} className="dark:text-[#03c0c6] text-blue-500"></HomeIcon>,
+    "5": <GiClothes size="55" className="dark:text-[#03c0c6] text-blue-500"></GiClothes>,
   }
   return (
     <div

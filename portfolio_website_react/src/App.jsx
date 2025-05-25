@@ -1,24 +1,32 @@
-import Navbar from "./components/header/Navbar2"
-import Home from "./components/home/Home"
-import Education from "./components/education/Education"
-import Line from "./components/Line"
-import Project from "./components/projects/Project"
-import Skills from "./components/skills/Skills"
-import Contact from "./components/footer/Contact"
-import Footer from "./components/Footer"
-import { useEffect, useState } from "react"
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import toast, { Toaster } from 'react-hot-toast';
-import './App.css';
+import Navbar from "./components/header/Navbar2";
+import Home from "./components/home/Home";
+import Education from "./components/education/Education";
+import Line from "./components/Line";
+import Project from "./components/projects/Project";
+import Skills from "./components/skills/Skills";
+import Contact from "./components/footer/Contact";
+import Footer from "./components/Footer";
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import toast, { Toaster } from "react-hot-toast";
+import "./App.css";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(() => {
+    const stored = localStorage.getItem("theme");
+    return stored === "dark";
+  });
 
-  const [darkMode, setDarkMode] = useState(true);
+  useEffect(() => {
+    // Update localStorage and document class when theme changes
+    localStorage.setItem('theme', darkMode ? 'dark' : 'light');
+    document.documentElement.className = darkMode ? 'dark' : '';
+  }, [darkMode]);
 
   useEffect(() => {
     AOS.init({ duration: 600 });
-  }, [])
+  }, []);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -42,7 +50,7 @@ function App() {
       </div>
       {/* </div> */}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
