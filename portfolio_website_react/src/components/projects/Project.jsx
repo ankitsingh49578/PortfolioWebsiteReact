@@ -30,10 +30,11 @@ function Project() {
                 <div key={project.id} data-aos="fade-up" className={`${project.id % 2 === 0 ? "flex justify-center" : "flex justify-center md:block md:items-start"}`}>
                   <ProjectCard
                     logo={logos[project.id]}
-                    head={project.heading}
-                    cont={project.content}
-                    anc={project.url}
-                    img={project.image}
+                    heading={project.heading}
+                    content={project.content}
+                    liveLink={project.liveLink}
+                    githubLink={project.githubLink}
+                    image={project.image}
                   ></ProjectCard>
                 </div>
               )
