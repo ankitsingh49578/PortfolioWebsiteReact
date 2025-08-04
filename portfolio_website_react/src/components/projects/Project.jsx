@@ -1,19 +1,18 @@
-import React from "react";
 import ProjectCard from "./ProjectCard";
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
 import WebIcon from "@mui/icons-material/Web";
 import HomeIcon from '@mui/icons-material/Home';
 import projectContent from "./projectContent";
 import { GiClothes } from "react-icons/gi";
+import { RiMoneyRupeeCircleFill } from "react-icons/ri";
 
 function Project() {
   const logos = {
-    "1": <AddShoppingCartIcon sx={{ fontSize: "55px" }} className="dark:text-[#03c0c6] text-blue-500"></AddShoppingCartIcon>,
-    "2": <WebIcon sx={{ fontSize: "55px" }} className="dark:text-[#03c0c6] text-blue-500"></WebIcon>,
-    "3": <RestaurantMenuIcon sx={{ fontSize: "55px" }} className="dark:text-[#03c0c6] text-blue-500"></RestaurantMenuIcon>,
-    "4": <HomeIcon sx={{ fontSize: "55px" }} className="dark:text-[#03c0c6] text-blue-500"></HomeIcon>,
-    "5": <GiClothes size="55" className="dark:text-[#03c0c6] text-blue-500"></GiClothes>,
+    "1": <WebIcon sx={{ fontSize: "55px" }} className="dark:text-[#03c0c6] text-blue-500"></WebIcon>,
+    "2": <RestaurantMenuIcon sx={{ fontSize: "55px" }} className="dark:text-[#03c0c6] text-blue-500"></RestaurantMenuIcon>,
+    "3": <HomeIcon sx={{ fontSize: "55px" }} className="dark:text-[#03c0c6] text-blue-500"></HomeIcon>,
+    "4": <GiClothes size="55" className="dark:text-[#03c0c6] text-blue-500"></GiClothes>,
+    "5": <RiMoneyRupeeCircleFill size="55" className="dark:text-[#03c0c6] text-blue-500"></RiMoneyRupeeCircleFill>,
   }
   return (
     <div

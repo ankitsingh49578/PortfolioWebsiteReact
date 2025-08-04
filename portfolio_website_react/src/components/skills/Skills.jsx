@@ -30,43 +30,43 @@ function Skills() {
     },
     {
       id: 6,
+      src: "./skills/nextjs.png",
+      name: "NextJs"
+    },
+    {
+      id: 7,
       src: "./skills/cpp.png",
       name: "C++"
     },
     {
-      id: 7,
+      id: 8,
       src: "./skills/python.png",
       name: "Python"
     },
     {
-      id: 8,
+      id: 9,
       src: "./skills/github.png",
       name: "Github"
     },
     {
-      id: 9,
+      id: 10,
       src: "./skills/bootstrap.png",
       name: "Bootstrap"
     },
     {
-      id: 10,
+      id: 11,
       src: "./skills/nodejs.png",
       name: "Node.Js"
     },
     {
-      id: 11,
+      id: 12,
       src: "./skills/mongodb.png",
       name: "MongoDB"
     },
     {
-      id: 12,
+      id: 13,
       src: "./skills/expressjs.png",
       name: "Express.Js"
-    },
-    {
-      id: 13,
-      src: "./skills/ejs.png",
-      name: "EJS"
     },
     {
       id: 14,
