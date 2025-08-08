@@ -13,7 +13,7 @@ function HomeLeft() {
   });
   return (
     <div data-aos="fade-right">
-      <div className="translate-y-[70px] md:translate-y-[130px] flex flex-col md:text-left items-center md:items-start text-center">
+      <div className="translate-y-[70px] md:translate-y-[130px] flex flex-col md:text-left items-center md:items-start text-center mb-[72px]">
         <div className="text-4xl md:text-5xl dark:text-white text-gray-800 font-bold">
           <h1 className="mb-6">Hi, I'm Ankit Singh</h1>
           <h1 className="">

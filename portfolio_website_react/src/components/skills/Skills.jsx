@@ -88,7 +88,7 @@ function Skills() {
   ];
 
   return (
-    <div className="max-w-96 sm:max-w-lg md:max-w-5xl mx-auto">
+    <div id="skills" className="max-w-96 sm:max-w-lg md:max-w-5xl mx-auto">
       <h1
         data-aos="fade-right"
         className="text-6xl text-center dark:text-[#a0a8b3] font-semibold mb-8"

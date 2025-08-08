@@ -140,8 +140,8 @@ const Contact = () => {
               </div>
             </div>
 
-            <div data-aos="fade-left" className="w-full px-4 lg:w-1/2 xl:w-5/12">
-              <div className="relative rounded-lg bg-slate-200 p-8 shadow-lg dark:bg-gray-900 sm:p-12">
+            <div data-aos="fade-left" className="w-full px-0 lg:w-1/2 xl:w-5/12">
+              <div className="relative rounded-lg bg-slate-200 p-6 shadow-lg dark:bg-gray-900 sm:p-12">
                 <form onSubmit={handleSubmit}>
                   <ContactInputBox
                     type="text"
