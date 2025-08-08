@@ -32,53 +32,56 @@ export default function Navbar2({ darkMode, setDarkMode }) {
   return (
     <Disclosure as="nav" className="mb-16 md:mb-4">
       <div className="">
-        <div className="fixed px-6 dark-theme top-0 w-full z-50 flex h-16 items-center justify-between bg-blue-500 text-white">
-          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            {/* Mobile menu button */}
-            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 dark:text-gray-400 dark:hover:bg-gray-700 hover:bg-blue-600 dark:hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
-              <Bars3Icon
-                aria-hidden="true"
-                className="block size-6 group-data-open:hidden"
-              />
-              <XMarkIcon
-                aria-hidden="true"
-                className="hidden size-6 group-data-open:block"
-              />
-            </DisclosureButton>
-          </div>
+        <div className="fixed px-6 dark-theme top-0 w-full z-50 flex h-16 items-center justify-center bg-blue-500 text-white">
+          <div className="flex justify-between w-full max-w-6xl">
+            <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              {/* Mobile menu button */}
+              <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 dark:text-gray-400 dark:hover:bg-gray-700 hover:bg-blue-600 dark:hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
+                <Bars3Icon
+                  aria-hidden="true"
+                  className="block size-6 group-data-open:hidden"
+                />
+                <XMarkIcon
+                  aria-hidden="true"
+                  className="hidden size-6 group-data-open:block"
+                />
+              </DisclosureButton>
+            </div>
 
-          <div className="flex items-center justify-center sm:justify-between">
-            <div className="hidden sm:ml-6 sm:block">
-              <div className="flex space-x-4">
-                {navItems.map((item, index) => (
-                  <a
-                    key={index}
-                    href={item.href}
-                    onClick={() => setActiveIndex(index)} // ✅ Update active on click
-                    className={classNames(
-                      index === activeIndex
-                        ? "dark:bg-[#03c0c6] bg-blue-600 dark:text-gray-900"
-                        : "dark:text-gray-300 dark:hover:bg-gray-700 hover:bg-blue-600 dark:hover:text-white",
-                      "rounded-md px-3 py-2 text-md font-medium"
-                    )}
-                  >
-                    {item.name}
-                  </a>
-                ))}
+            <div className="flex items-center justify-center sm:justify-between">
+              <div className="hidden sm:ml-6 sm:block">
+                <div data-aos="fade-right" className="flex space-x-4">
+                  {navItems.map((item, index) => (
+                    <a
+                      key={index}
+                      href={item.href}
+                      onClick={() => setActiveIndex(index)} // ✅ Update active on click
+                      className={classNames(
+                        index === activeIndex
+                          ? "dark:bg-[#03c0c6] bg-blue-600 dark:text-gray-900"
+                          : "dark:text-gray-300 dark:hover:bg-gray-700 hover:bg-blue-600 dark:hover:text-white",
+                        "rounded-md px-3 py-2 text-md font-medium"
+                      )}
+                    >
+                      {item.name}
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-          {/* <button onClick={() => setDarkMode(!darkMode)} className='dark:hover:bg-gray-800 hover:bg-blue-400 rounded-full'>{darkMode ? <img src='./light.png' alt="dark" className='w-10 h-10'/> : <img src='./dark.png' alt="light" className='w-10 h-10'/>}</button> */}
-          <button
-            className={`btn ${isChecked ? "btn--checked" : "bg-gray-500"}`}
-            onClick={handleToggle}
-          >
-            <div className="ripple ripple--dark"></div>
-            <div className="ripple ripple--light"></div>
+            {/* <button onClick={() => setDarkMode(!darkMode)} className='dark:hover:bg-gray-800 hover:bg-blue-400 rounded-full'>{darkMode ? <img src='./light.png' alt="dark" className='w-10 h-10'/> : <img src='./dark.png' alt="light" className='w-10 h-10'/>}</button> */}
+            <button
+              data-aos="fade-left"
+              className={`btn ${isChecked ? "btn--checked" : "bg-gray-500"}`}
+              onClick={handleToggle}
+            >
+              <div className="ripple ripple--dark"></div>
+              <div className="ripple ripple--light"></div>
 
-            <div className="toggle toggle--dark"></div>
-            <div className="toggle toggle--light"></div>
-          </button>
+              <div className="toggle toggle--dark"></div>
+              <div className="toggle toggle--light"></div>
+            </button>
+          </div>
         </div>
       </div>
 

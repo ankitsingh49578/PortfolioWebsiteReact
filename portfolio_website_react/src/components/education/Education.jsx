@@ -1,5 +1,5 @@
 import React from "react";
-import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
+import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 import timelineElements from "./TimeLineElements";
 import {
   VerticalTimeline,
@@ -9,34 +9,38 @@ import "react-vertical-timeline-component/style.min.css";
 
 function Education() {
   return (
-    <div data-aos="fade-up" id="about" className="pr-2 md:pr-0">
-      <h1 className="text-6xl text-center dark:text-[#a0a8b3] font-semibold mb-10">
+    <div id="about" className="pr-2 md:pr-0">
+      <h1 data-aos="fade-up" className="text-6xl text-center dark:text-[#a0a8b3] font-semibold mb-10">
         Education
       </h1>
-      <div className="">
+      <div data-aos="fade-left">
         <VerticalTimeline>
           {timelineElements.map((element) => {
             return (
               <VerticalTimelineElement
+                contentStyle={{ padding: "0px"}}
                 key={element.id}
-                date={<span className="">{element.year}</span>}
+                date={<span className="pl-3 md:pl-0">{element.year}</span>}
+                
                 iconStyle={
                   element.icon === "school"
                     ? { background: "#06d6a0" }
                     : { background: "#f9c74f" }
                 }
-                icon = {<SchoolOutlinedIcon/>}
+                icon={<SchoolOutlinedIcon />}
               >
-                <h1 className="text-xl text-slate-700 font-bold font-serif">
-                  {element.name}
-                </h1>
-                <h3 className="font-semibold text-slate-600 font-serif">
-                  {element.location}
-                </h3>
-                <p className="text-slate-500">{element.description}</p>
-                <h3 className="mt-4 text-slate-500 text-xs font-semibold">
-                  {element.year}
-                </h3>
+                <div className="dark:bg-white bg-blue-500 dark:text-gray-700 text-white p-5 rounded-lg">
+                  <h1 className="text-xl font-bold font-serif">
+                    {element.name}
+                  </h1>
+                  <h3 className="font-semibold font-serif">
+                    {element.location}
+                  </h3>
+                  <p className="">{element.description}</p>
+                  {/* <h3 className="mt-4 text-xs font-semibold">
+                    {element.year}
+                  </h3> */}
+                </div>
               </VerticalTimelineElement>
             );
           })}

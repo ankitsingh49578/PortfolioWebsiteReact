@@ -1,21 +1,21 @@
 const projectContent = [
   {
     id: 1,
-    heading: "Portfolio-Website",
+    heading: "AI-Powered Expense Tracker",
     content:
-      "This is a modern and responsive portfolio website built using React.js and Tailwind CSS. It highlights my key projects with live demos and GitHub links, allowing quick access for recruiters.",
-    liveLink: "https://portfolio-website-react-nine.vercel.app/",
-    githubLink: "https://github.com/ankitsingh49578/PortfolioWebsiteReact",
-    image: "./projects/portfolio.png",
+      "Built an AI-powered expense tracker using Next.js, TypeScript, and Tailwind CSS, with smart expense categorization and financial insights via OpenRouter. Used Clerk for auth, Prisma for DB, and Chart.js for visualizations.",
+    liveLink: "https://ai-powered-expense-tracker-two.vercel.app/",
+    githubLink: "https://github.com/ankitsingh49578/AI-Powered-Expense-Tracker",
+    image: "./projects/expenseTracker.png",
   },
   {
     id: 2,
-    heading: "Food Recipe App",
+    heading: "Clothoria",
     content:
-      "A React.js and Tailwind CSS-based app that lets users search dishes and view detailed recipes using TheMealDB API.",
-    liveLink: "https://food-recipe-app-black.vercel.app/",
-    githubLink: "https://github.com/ankitsingh49578/Food-Recipe-app",
-    image: "./projects/foodRecipeApp.png",
+      "Built a full-stack MERN e-commerce site with product filtering, cart management, and responsive UI. Integrated RESTful APIs and deployed both frontend and backend on Vercel.",
+    liveLink: "https://e-commerceclothoria.vercel.app/",
+    githubLink: "https://github.com/ankitsingh49578/Clothoria",
+    image: "./projects/clothoria.png",
   },
   {
     id: 3,
@@ -28,21 +28,21 @@ const projectContent = [
   },
   {
     id: 4,
-    heading: "Clothoria",
+    heading: "Portfolio-Website",
     content:
-      "Built a full-stack MERN e-commerce site with product filtering, cart management, and responsive UI. Integrated RESTful APIs and deployed both frontend and backend on Vercel.",
-    liveLink: "https://e-commerceclothoria.vercel.app/",
-    githubLink: "https://github.com/ankitsingh49578/Clothoria",
-    image: "./projects/clothoria.png",
+      "This is a modern and responsive portfolio website built using React.js and Tailwind CSS. It highlights my key projects with live demos and GitHub links, allowing quick access for recruiters.",
+    liveLink: "https://portfolio-website-react-nine.vercel.app/",
+    githubLink: "https://github.com/ankitsingh49578/PortfolioWebsiteReact",
+    image: "./projects/portfolio.png",
   },
   {
     id: 5,
-    heading: "AI-Powered Expense Tracker",
+    heading: "Food Recipe App",
     content:
-      "Built an AI-powered expense tracker using Next.js, TypeScript, and Tailwind CSS, with smart expense categorization and financial insights via OpenRouter. Used Clerk for auth, Prisma for DB, and Chart.js for visualizations.",
-    liveLink: "https://ai-powered-expense-tracker-two.vercel.app/",
-    githubLink: "https://github.com/ankitsingh49578/AI-Powered-Expense-Tracker",
-    image: "./projects/expenseTracker.png",
+      "A React.js and Tailwind CSS-based app that lets users search dishes and view detailed recipes using TheMealDB API.",
+    liveLink: "https://food-recipe-app-black.vercel.app/",
+    githubLink: "https://github.com/ankitsingh49578/Food-Recipe-app",
+    image: "./projects/foodRecipeApp.png",
   },
 ];
 

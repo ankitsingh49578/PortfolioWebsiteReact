@@ -9,8 +9,10 @@ import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import toast, { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 import "./App.css";
+import CustomCursor from "./components/CustomCursor";
+import { Particles } from "./components/Particles";
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -20,17 +22,23 @@ function App() {
 
   useEffect(() => {
     // Update localStorage and document class when theme changes
-    localStorage.setItem('theme', darkMode ? 'dark' : 'light');
-    document.documentElement.className = darkMode ? 'dark' : '';
+    localStorage.setItem("theme", darkMode ? "dark" : "light");
+    document.documentElement.className = darkMode ? "dark" : "";
   }, [darkMode]);
 
   useEffect(() => {
-    AOS.init({ duration: 600 });
+    AOS.init({ duration: 1000 });
   }, []);
 
   return (
-    <div className={darkMode ? "dark" : ""}>
-      {/* <div className="md:p-[16px] bg-gradient-to-r from-green-400 via-[#03c0c6] to-purple-500 -webkit-background-clip: border-box border-transparent min-h-screen min-w-screen"> */}
+    <div className={darkMode ? "dark relative overflow-hidden" : "relative overflow-hidden"}>
+      <Particles
+        className="absolute inset-0 z-0"
+        quantity={500}
+        ease={80}
+        color={darkMode ? "#ffffff": "#A020F0"}
+        refresh
+      />
       <div className="bg-slate-200 h-full dark-theme">
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode}></Navbar>
         <div className="ml-0 mr-0 md:ml-20 md:mr-20 overflow-x-hidden md:overflow-x-visible">
@@ -45,6 +53,7 @@ function App() {
           <Contact></Contact>
           <Line></Line>
           <Footer></Footer>
+          <CustomCursor />
         </div>
         <Toaster position="bottom-center" reverseOrder={false} />
       </div>
