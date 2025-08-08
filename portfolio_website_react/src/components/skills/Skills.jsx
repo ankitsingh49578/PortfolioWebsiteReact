@@ -138,7 +138,7 @@ function Skills() {
           className="flex gap-10 w-max"
           animate={{ x: ["0%", "-100%"] }}
           transition={{
-            duration: 20,
+            duration: 15,
             ease: "linear",
             repeat: Infinity,
           }}
@@ -158,7 +158,7 @@ function Skills() {
           className="flex gap-10 w-max"
           animate={{ x: ["0%", "-100%"] }}
           transition={{
-            duration: 20,
+            duration: 15,
             ease: "linear",
             repeat: Infinity,
           }}
@@ -186,7 +186,7 @@ function Skills() {
           className="flex gap-10 w-max"
           animate={{ x: ["0%", "-100%"] }}
           transition={{
-            duration: 20,
+            duration: 15,
             ease: "linear",
             repeat: Infinity,
           }}
@@ -206,7 +206,7 @@ function Skills() {
           className="flex gap-10 w-max"
           animate={{ x: ["0%", "-100%"] }}
           transition={{
-            duration: 20,
+            duration: 15,
             ease: "linear",
             repeat: Infinity,
           }}
